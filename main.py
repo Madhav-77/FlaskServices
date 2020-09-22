@@ -12,6 +12,11 @@ import os
 app.config["UPLOADS_FOLDER"] = "C:/Users/madha/Angular/FlaskServices3/uploads"
 app.config["ALLOWED_EXTENSIONS"] = ["png", "jpg", "jpeg"]
 
+@app.route('/', methods=['POST', 'GET'])
+def welcomeText():
+	print(f"got name")
+	return True
+
 #checks file extension  
 def check_extensions(filename):
 	if not "." in filename:
