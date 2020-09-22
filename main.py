@@ -14,7 +14,9 @@ app.config["ALLOWED_EXTENSIONS"] = ["png", "jpg", "jpeg"]
 
 @app.route('/')
 def welcomeText():
-	return True
+	print("welcome")
+	text = "Welcome"
+	return text
 
 #checks file extension  
 def check_extensions(filename):
