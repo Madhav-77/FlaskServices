@@ -12,7 +12,7 @@ import os
 app.config["UPLOADS_FOLDER"] = "C:/Users/madha/Angular/FlaskServices3/uploads"
 app.config["ALLOWED_EXTENSIONS"] = ["png", "jpg", "jpeg"]
 
-@app.route('/')
+@app.route('https://shop-bridge-flask-service.herokuapp.com/')
 def welcomeText():
 	print("welcome")
 	text = "Welcome"
